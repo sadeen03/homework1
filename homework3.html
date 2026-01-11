@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Forms Example</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Employee Registration Form</h1>
+      
+    <form>
+        <fieldset>
+            <legend>Employee Information:</legend>
+
+            <input type="radio" value="Mr" name="title">
+            <label for="Mr">Mr.</label>
+
+            <input type="radio" value="Mrs" name="title">
+            <label for="Mrs">Mrs.</label>
+
+            <input type="radio" value="Ms" name="title">
+            <label for="Ms">Ms.</label>
+            <br><br>
+
+            <label for="first-name">First Name:</label>
+            <input type="text" placeholder="First name"><br><br>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" placeholder="Last name"><br><br>
+
+            <label for="address1">Mail Address 1:</label>
+            <input type="text"><br><br>
+
+            <label for="address2">Mail Address 2:</label>
+            <input type="text"><br><br>
+
+            <label for="city">City:     </label> 
+            <input type="text"><br><br>
+
+            <label for="state">State:</label>
+            <select>
+                <option value="Amman" selected>Amman</option>
+                <option value="Irbid">Irbid</option>
+                <option value="Zarqa">Zarqa</option>
+                <option value="Karak">Karak</option>
+            </select><br><br>
+
+            <label for="zip">ZIP Code:</label>
+            <input type="number"><br><br>
+
+            <label for="photo">Upload Photo:</label>
+            <input type="file"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email"><br><br>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="number" value="+962"><br><br>
+
+            <label>Language:</label><br>
+            <input type="checkbox"> English<br>
+            <input type="checkbox"> Arabic<br>
+            <input type="checkbox"> German<br>
+            <input type="checkbox"> Spanish<br><br>
+
+            <label for="information">Additional Information:</label><br>
+            <textarea name="information" rows="5" cols="30"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+      
+</body>
+</html>
