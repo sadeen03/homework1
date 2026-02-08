@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title> website</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            scroll-behavior: smooth;
+            
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        hr {
+            width: 150px;
+            height: 6px;
+            background-color: rgb(14, 86, 110);
+            margin: 50px auto;
+        }
+
+        /* hero section */
+        .hero {
+            background-image: url(assets/hero.jpg);
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+
+        .layer {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(1, 1, 1, 0.5);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 30px 0;
+        }
+
+        header h2 a {
+            font-size: 30px;
+        }
+
+        header nav a {
+            margin: 0 10px;
+        }
+
+        .maintext {
+            margin: 150px
+        }
+
+        .maintext h1 {
+            font-size: 50px;
+            color: white;
+        }
+
+        .maintext h3 {
+            margin: 20px 0;
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: white;
+
+        }
+
+        .maintext a {
+            color: white;
+            background-color: dodgerblue;
+            padding: 20px 40px;
+            border-radius: 10px;
+            margin: 10px 0;
+            display: inline-block;
+
+        }
+
+        .maintext a:hover {
+            background-color: rgb(28, 126, 224);
+
+        }
+
+        /*OUR WORK*/
+        .ourwork {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 50px 200px;
+        }
+
+        .title {
+            font-size: 35px;
+            margin: 20px;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        .grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        .grid div {
+            padding: 20px;
+            height: 350px;
+            margin: 3px;
+            background-size: cover;
+        }
+
+        .small {
+            flex-basis: 35%;
+        }
+
+        .large {
+            flex-basis: 55%;
+        }
+
+        /*featurs section*/
+        .featurs {
+            background-color: lightblue;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 200px;
+
+        }
+        .card{
+            box-shadow: 2px 2px rgb(255, 255, 255);
+            margin: 5px;
+            padding: 50px;
+            border-radius: 50%;
+            background-color: lightgoldenrodyellow;
+
+        }
+        .cards{
+            display: flex;
+        }
+        /*SECTION NEWSLETTER*/
+        .newsletter{
+            text-align: center;
+            flex-direction: column;
+
+        }
+        form{
+            display:flex;
+            flex-wrap: wrap;
+        }
+        form input{
+            padding: 20px;
+            flex-grow: 1;
+        }
+        form .btn{
+            padding: 20px 40px ;
+            background-color: dodgerblue;
+            color: white;
+            flex-grow: 1;
+        }
+        /*Footer*/
+        footer{
+            background-color: black;
+            text-align: center;
+            padding:40px ;
+            color: lightgrey;
+
+        }
+        .mybtn{
+            padding: 10px;
+            background-color: yellow;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            border-radius: 50%;
+        }
+        @media(max-width:600px){
+            header{
+                flex-direction: column;
+            }
+            header nav{
+                margin-top: 20px;
+            }
+            .maintext h1{
+                font-size: 40px;
+            }
+              .maintext h1{
+                font-size: 20px;
+            }
+            .maintext{
+                margin-top: 60px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero">
+        <div class="layer">
+            <header>
+                <h2><a href="#">Website Logo</a></h2>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#ourwork">Our work</a>
+                    <a href="#features">Features</a>
+                    <a href="#newsletter">News Letter</a>
+                </nav>
+            </header>
+            <div class="maintext">
+                <h1>Responsive Flexbox template</h1>
+                <h3>Done by Sadeen </h3>
+                <a href="#">Download it here </a>
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+    <section class="ourwork" id="ourwork">
+        <h3 class="title">Some Of Our Work</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim voluptate ipsa animi nihil minus, quisquam,
+            dolorum dolore consequuntur, incidunt architecto recusandae deleniti corporis et repellendus nisi illo.
+            Repudiandae, fuga atque?
+        </p>
+        <hr>
+        <div class="grid">
+            <div class="small" style="background-image: url(assets/balloon.jpg);"></div>
+            <div class="large" style="background-image: url(assets/coast.jpg);"></div>
+            <div class="large" style="background-image: url(assets/mountain.jpg);"></div>
+            <div class="small" style="background-image: url(assets/island.jpg);"></div>
+
+        </div>
+    </section>
+    <section>
+
+    </section>
+    <section class="featurs" id="features">
+        <h3 class="title">Features</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim voluptate ipsa animi nihil minus, quisquam,
+            dolorum dolore consequuntur, incidunt architecto recusandae deleniti corporis et repellendus nisi illo.
+            Repudiandae, fuga atque?
+        </p>
+   
+          <div class="cards">
+            <div class="card">
+            <h4>Photography</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim voluptate ipsa animi nihil minus, quisquam,
+            dolorum dolore consequuntur, incidunt architecto recusandae deleniti corporis et repellendus nisi illo.
+            Repudiandae, fuga atque?
+        </p>
+        </div>
+         
+            <div class="card">
+            <h4 >Photography</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim voluptate ipsa animi nihil minus, quisquam,
+            dolorum dolore consequuntur, incidunt architecto recusandae deleniti corporis et repellendus nisi illo.
+            Repudiandae, fuga atque?
+        </p>
+        </div>
+           <div class="card">
+            <h4 >Photography</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim voluptate ipsa animi nihil minus, quisquam,
+            dolorum dolore consequuntur, incidunt architecto recusandae deleniti corporis et repellendus nisi illo.
+            Repudiandae, fuga atque?
+        </p>
+        </div>
+        </div>
+        <hr>
+
+    </section>
+    <section class="newsletter" id="newsletter">
+		<h3 class="title">Join Our NewsLetter</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi
+			vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
+		<hr>
+
+		<form>
+			<input type="email" placeholder="Email">
+			<a href="#" class="btn">Subscribe now</a>
+		</form>
+	</section>
+    <footer>
+		<p>Made by <a href="">Sadeen Taleb</a>. images courtesy to
+			<a href="">unsplash</a>.
+		</p>
+
+		<p>No attribution required. you can remove this footer.</p>
+	</footer>
+    <a href="#top">
+		<div class="mybtn">
+			<i class="fa-solid fa-arrow-up-from-bracket" style="color:white"></i>
+		</div>
+	</a>
+</body>
+
+</html>
