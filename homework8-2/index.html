@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array</title>
+  <script src="index.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #43cea2, #185a9d);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    form {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      width: 350px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin: 15px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    input[type="submit"],
+    input[type="button"] {
+      width: 48%;
+      padding: 10px;
+      margin: 5px 1%;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      color: white;
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    input[type="submit"] {
+      background: #43cea2;
+    }
+
+    input[type="button"] {
+      background: #185a9d;
+    }
+
+    input:hover {
+      transform: scale(1.05);
+    }
+
+    hr {
+      margin: 20px 0;
+    }
+
+    #p1 {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <label for="num1">Add items to your array:</label>
+    <input type="text" id="item1" placeholder="Item">
+    <br>
+    <input type="submit" onclick="add();return false;" value="Add Item">
+    <input type="button" onclick="display();" value="Display Array">
+    <hr>
+    <p id="p1"></p>
+  </form>
+</body>
+</html>
